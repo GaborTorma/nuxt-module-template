@@ -1,9 +1,9 @@
 {
-  "name": "nuxt-module",
+  "name": "my-module",
   "version": "1.0.0",
   "description": "My new Nuxt module",
   "repository": {
-    "url": "git@github.com:GaborTorma/nuxt-module.git"
+    "url": "git@github.com:GaborTorma/my-module.git"
   },
   "license": "MIT",
   "type": "module",
@@ -20,16 +20,16 @@
     "dist"
   ],
   "scripts": {
-    "prepack": "nuxt-module-build build",
+    "prepack": "my-module-build build",
     "dev": "nuxi dev playground --host",
     "dev:build": "nuxi build playground",
-    "dev:prepare": "nuxt-module-build && nuxt prepare playground",
+    "dev:prepare": "my-module-build && nuxt prepare playground",
     "release": "npm run lint && npm run prepack && changelogen --release && npm publish --access=public && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
     "cleanup": "nuxt cleanup && nuxt cleanup playground",
-    "reset": "npm run cleanup && nuxt prepare && nuxt prepare playground && nuxt-module-build",
+    "reset": "npm run cleanup && nuxt prepare && nuxt prepare playground && my-module-build",
     "reinstall": "rm -rf node_modules && rm -rf ./playground/node_modules && npm install && npm run reset"
   },
   "dependencies": {

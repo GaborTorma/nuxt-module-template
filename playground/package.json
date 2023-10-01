@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "nuxt-module-playground",
+  "name": "my-module-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxi dev --host",
